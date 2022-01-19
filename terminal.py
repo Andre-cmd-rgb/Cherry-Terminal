@@ -49,7 +49,7 @@ while True:
 		print('cd')
 		print('exit')
 	if code == 'exit':
-		os.system(exit)
+		quit()
 	if code == 'cd':
 		chdir = input("Where do you want to cd:")
 		os.chdir(chdir)
