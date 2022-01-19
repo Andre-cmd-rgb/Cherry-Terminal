@@ -1,2 +1,2 @@
-# Haker-Terminal
+# Hacker-Terminal
 A terminal written in python
