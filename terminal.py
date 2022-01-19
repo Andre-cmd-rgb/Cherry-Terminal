@@ -53,6 +53,8 @@ while True:
 	if code == 'cd':
 		chdir = input("Where do you want to cd:")
 		os.chdir(chdir)
+	if code == 'import':
+		
 
 
 	
