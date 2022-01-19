@@ -4,10 +4,13 @@ import socket
 import time
 import os
 
-path = 'C:/'
+
+path = os.path.dirname(os.path.abspath(__file__))
+
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
 print("Cherry Terminal [Version 1.2 beta]")
+print("Operating in: " + path)
 while True:
 	code = input(">>> ")
 	if code == 'ping':
