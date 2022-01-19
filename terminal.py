@@ -9,7 +9,7 @@ path = os.path.dirname(os.path.abspath(__file__))
 
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
-print("Hacker Terminal [Version 0.1]")
+print("Hacker Terminal [Version 0.11111111111111111111111]")
 print("Operating in: " + path)
 while True:
 	code = input(">>> ")
