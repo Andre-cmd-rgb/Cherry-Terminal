@@ -7,7 +7,7 @@ import os
 path = 'C:/'
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
-print("Cherry Terminal [Version 1.2 beta]")
+print("Haker Terminal [Version 1.2 beta]")
 while True:
 	code = input(">>> ")
 	if code == 'ping':
