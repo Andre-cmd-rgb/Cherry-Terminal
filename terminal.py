@@ -52,7 +52,8 @@ while True:
 	if code == 'cd':
 		chdir = input("Where do you want to cd:")
 		os.chdir(chdir)
-	if code == 'upgrade':
+		if code == 'upgrade':
 		filename = wget.download(url)
 		os.remove("terminal.py")
+		os.rename('terminal (1).py', 'terminal.py')
 		os.system(exit)
