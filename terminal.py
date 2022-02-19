@@ -55,9 +55,4 @@ while True:
 	if code == 'upgrade':
 		filename = wget.download(url)
 		os.remove("terminal.py")
-
-
-
-	
-		
-
+		os.system(exit)
