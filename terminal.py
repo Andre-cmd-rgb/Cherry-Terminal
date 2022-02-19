@@ -3,14 +3,13 @@ import platform
 import socket
 import time
 import os
+import wget
 
-
-path = os.path.dirname(os.path.abspath(__file__))
-
+url = 'https://raw.githubusercontent.com/Andre-cmd-rgb/Cherry-Terminal/main/terminal.py'
+path = 'C:/'
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
-print("Hacker Terminal [Version 0.11111111111111111111111]")
-print("Operating in: " + path)
+print("Cherry Terminal [Version 1.2 beta]")
 while True:
 	code = input(">>> ")
 	if code == 'ping':
@@ -49,11 +48,16 @@ while True:
 		print('cd')
 		print('exit')
 	if code == 'exit':
-		quit()
+		os.system(exit)
 	if code == 'cd':
 		chdir = input("Where do you want to cd:")
 		os.chdir(chdir)
+	if code == 'upgrade':
+		filename = wget.download(url)
+		os.remove("terminal.py")
+
 
 
 	
 		
+
