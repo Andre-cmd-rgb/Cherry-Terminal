@@ -6,11 +6,11 @@ import os
 ##import wget
 ## Per Vigolini, wget non e riconosciuto
 
-url = 'https://github.com/Andre-cmd-rgb/Cherry-Terminal/releases/download/0.2/terminal.py'
+url = 'https://github.com/Andre-cmd-rgb/Cherry-Terminal/releases/download/0.4/terminal.py'
 path = 'C:/'
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
-print("Cherry Terminal [Version 0.1 beta]")
+print("Cherry Terminal [Version 0.3 beta]")
 A = False
 def madeit():
 	print("No reward disponible for now, return on other versions with same credentials")
