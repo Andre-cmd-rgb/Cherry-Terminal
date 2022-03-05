@@ -3,13 +3,18 @@ import platform
 import socket
 import time
 import os
-import wget
+##import wget
+## Per Vigolini, wget non e riconosciuto
 
 url = 'https://github.com/Andre-cmd-rgb/Cherry-Terminal/releases/download/0.2/terminal.py'
 path = 'C:/'
 host_name = socket.gethostname()
 host_ip = socket.gethostbyname(host_name)
-print("Cherry Terminal [Version 1.2 beta]")
+print("Cherry Terminal [Version 0.1 beta]")
+A = False
+def madeit():
+	print("No reward disponible for now, return on other versions with same credentials")
+	print("!!! IT'S FORBIDDEN TO SHARE ANY INFO ON INTERNET")
 while True:
 	code = input(">>> ")
 	if code == 'ping':
@@ -46,6 +51,7 @@ while True:
 		print('ls -a')
 		print('echo')
 		print('cd')
+		print("mistery_login")
 		print('exit')
 	if code == 'exit':
 		os.system(exit)
@@ -57,3 +63,28 @@ while True:
 		os.remove("terminal.py")
 		os.rename('terminal (1).py', 'terminal.py')
 		os.system(exit)
+	if code == "mistery_login":
+		print("This is a built-in game, with the given information you need to find the user login and password.")
+		print("First clue: it's a stupid person and doesn't know much about security.")
+		print("His name is Gigio and surname Giangio.")
+		print("His zoodiacal sign is Cancer and he's born the 21 in the 'Millenium bug year'")
+		print("He never put spaces or signs in his texts.")
+		A = True
+		while A == True :
+			usr = input("Username: ")
+			if usr == "GigioGiangio":
+				print("Good morning Gigio")
+				psw = input("Password: ")
+			else:
+				A = False
+				
+			if psw == "21072000":
+				print("Congrats, you made it!")
+				madeit()
+				A = False
+			else:
+				print("Nope")
+				A = False
+				
+
+
